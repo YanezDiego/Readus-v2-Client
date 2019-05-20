@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+#READUS CLIENT
+
+this is the client side for Readus v2.
+
 ## Available Scripts
 
 In the project directory, you can run:
