@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import MostShared from './MostShared'
-import { maxHeaderSize } from 'http';
+
 
 
 class MostSharedList extends Component {
@@ -19,13 +19,8 @@ class MostSharedList extends Component {
     render(){
         return(
            <>
-                <div 
-                className = 'row' 
-                style={{
-                    WebkitPaddingStart: "55px",
-                    WebkitPaddingEnd: "100px"
-
-                }}>
+                <div className = 'row'> 
+                
                         {this.renderMostShared()}
                 </div>
 
