@@ -7,6 +7,7 @@ import NavBar from './component/layout/Navbar';
 import Landing from './component/layout/Landing';
 import MostSharedContainer from './containers/MostSharedContainer';
 import TopStoriesContainer from './containers/TopStoriesContainer';
+import MovieReviewsContainer from './containers/MovieReviewsContainer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route exact path = "/" component ={ Landing }/>
       <Route exact path = "/mostshared" component = { MostSharedContainer }/>
       <Route exact path = "/topstories" component = { TopStoriesContainer }/>
+      <Route exact path = "/moviereviews" component = { MovieReviewsContainer }/>
     </Router>
     </div>
   );
