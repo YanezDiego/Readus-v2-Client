@@ -3,7 +3,7 @@ import React from 'react'
 
 const MostShared = (props) => {
     return(
-        <div className = 'col s12 m6 l6'>
+        <div className = 'col s12 m6 l4'>
             <div className='card hoverable'>
                 <div className='card-image waves-effect waves-block waves-light'>
  
@@ -11,7 +11,7 @@ const MostShared = (props) => {
                     <a className = "waves-effect right waves-light btn blue-grey lighten-5" > <i className = "material-icons red-text"> add </i></a>
                 </div>
                 <div className = "card-content">
-                    <span className = "card-title activator black-text"> 
+                    <span className = "card-title truncate activator black-text"> 
                         <i className = "material-icons right" > more_vert </i>
                         {props.shared["title"]}
                     </span>
