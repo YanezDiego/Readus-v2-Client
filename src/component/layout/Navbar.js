@@ -28,6 +28,13 @@ class NavBar extends Component {
                 }} 
             className = 'black-text'> Top Stories </Link>
 
+            <Link to = '/moviereviews'
+            style = {{
+                fontFamily: 'monospace',
+                paddingLeft: "20px"
+                }}
+                className = 'black-text'> Movie Reviews </Link>
+
             </nav>
             </div>
         )
