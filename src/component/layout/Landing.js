@@ -1,4 +1,5 @@
 import React, { Component }from 'react'
+import { Link } from 'react-router-dom'
 
 
 class Landing extends Component{
@@ -20,6 +21,8 @@ class Landing extends Component{
             className = "flow-text balck-text">
                 Getting the articles that are important in the tech world, the most shared, and lastly <b>movies</b>!
             </p>
+
+            <Link to ="/signup" className= "btn float center waves-effect waves-light">Sign Up</Link>
             </div>
         )
     }
