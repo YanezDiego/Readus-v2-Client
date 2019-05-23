@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 class NavBar extends Component {
     render(){
         return(
-            <div className = "navbar-fixed">
+            <div className = "navbar-fixed" >
             <nav className = "z-depth-0 grey lighten-5" >
             <Link to = '/'
             style = {{
