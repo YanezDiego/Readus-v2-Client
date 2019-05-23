@@ -8,6 +8,7 @@ import Landing from './component/layout/Landing';
 import MostSharedContainer from './containers/MostSharedContainer';
 import TopStoriesContainer from './containers/TopStoriesContainer';
 import MovieReviewsContainer from './containers/MovieReviewsContainer';
+import Register from './component/Auth/Register';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route exact path = "/mostshared" component = { MostSharedContainer }/>
       <Route exact path = "/topstories" component = { TopStoriesContainer }/>
       <Route exact path = "/moviereviews" component = { MovieReviewsContainer }/>
+      <Route exact path = "/signup" component = { Register }/>
     </Router>
     </div>
   );
