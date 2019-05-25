@@ -12,7 +12,7 @@ class TopStoriesContainer extends Component {
     }
 
     getTopStories = () => {
-        axios.get("https://api.nytimes.com/svc/topstories/v2/technology.json?&api-key=sQo1VZ2GSMGZ3VpeUALwbbGWAtos4TgI")
+        axios.get("")
         .then(resp => this.setState({
             topStories: resp.data.results
         }))
@@ -28,7 +28,7 @@ class TopStoriesContainer extends Component {
     render(){
         return(
             <div>
-            <TopStoriesList stories = {this.state.stories}/>
+                <TopStoriesList stories={this.state.topStories}/>
             </div>
         )
     }
