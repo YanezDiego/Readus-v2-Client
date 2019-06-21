@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { Link } from "react-router-dom"
 
 import axios from "axios"
-import { async } from "q";
+
 class Login extends Component {
     constructor(){
         super()
@@ -21,13 +21,20 @@ class Login extends Component {
     onSubmit = (e) => {
         const {email, password} = this.state
         e.preventDefault()
-
         this.sendLogin(email, password)
     }
 
 
     sendLogin = async(email, password) => {
-        console.log(email, password)
+        let data = {
+            auth: {
+            email: email,
+            password: password
+           }
+        }
+        await axios.post("http://localhost:4000/user_token", data)
+        .then( resp => localStorage.setItem('jwt', resp.jwt))
+        .catch( err => console.log(err))
     }
 
 
