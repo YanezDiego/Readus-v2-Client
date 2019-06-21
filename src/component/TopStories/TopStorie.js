@@ -3,12 +3,14 @@ import React from 'react'
 
 const TopStorie = (props) => {
 
+    let image = props.storie["multimedia"].length > 1 ? props.storie["multimedia"][3]["url"] : null
+
     return(
          <div className = 'col s12 m6 l4'>
             <div className='card hoverable'>
                 <div className='card-image waves-effect waves-block waves-light'>
  
-                    <img className= "activator" src = { `${props.storie["multimedia"][3]["url"]}` }/>
+                    <img width = "" className= "activator" src = { `${ image }`}/>
                     <a className = "waves-effect right waves-light btn blue-grey lighten-5" > <i className = "material-icons red-text"> add </i></a>
                 </div>
                 <div className = "card-content">
